@@ -1,0 +1,73 @@
+{
+    "productName": "MPW-POS",
+    "main": "electron/electron.js",
+    "name": "electron-react-sqlite",
+    "version": "3.0.0",
+    "private": true,
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.5.0",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "escpos": "^3.0.0-alpha.6",
+        "escpos-usb": "^3.0.0-alpha.4",
+        "final-form": "^4.20.1",
+        "lodash": "^4.17.21",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-final-form": "^6.5.2",
+        "react-final-form-listeners": "^1.0.3",
+        "react-redux": "^7.2.2",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.1",
+        "react-simple-keyboard": "^2.5.146",
+        "redux": "^4.0.5",
+        "semantic-ui-css": "^2.4.1",
+        "semantic-ui-react": "^2.0.3",
+        "sqlite3": "^5.0.1",
+        "usb-detection": "^4.10.0",
+        "web-vitals": "^0.2.4"
+    },
+    "homepage": "./",
+    "scripts": {
+        "start-mac": "export BROWSER=none && react-scripts start",
+        "start-win": "set BROWSER=none && react-scripts start",
+        "start-electron-mac": "export ELECTRON_START_URL=http://localhost:3000 && electron .",
+        "start-electron-win": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+        "rebuild-sqlite3": "electron-rebuild -f -w sqlite3",
+        "rebuild-usb": "electron-rebuild -f -w usb-detection",
+        "postinstall": "electron-builder install-app-deps",
+        "clean": "rm -rf build dist",
+        "clean-win": "rmdir build /S /Q & rmdir dist/S /Q",
+        "build-electron": "mkdir build/src && cp -r electron/. build/electron && cp -r src/shared/. build/src/shared",
+        "build-electron-win": "mkdir build/src & robocopy electron build/electron /S & robocopy src/shared build/src/shared /S",
+        "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/electron.js --publish never",
+        "package-win": "electron-builder build --win -c.extraMetadata.main=build/electron/electron.js --publish never",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "electron": "^11.2.1",
+        "electron-builder": "^22.9.1",
+        "electron-rebuild": "^2.3.4"
+    }
+}

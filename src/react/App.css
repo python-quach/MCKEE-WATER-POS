@@ -1,0 +1,207 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* LOGIN SCREEN CSS */
+.field.whiteIcon i.icon {
+    color: white;
+}
+.field.blueIcon i.icon {
+    color: #40b2ff;
+}
+.field.blueIcon div.input input[type='text']::-webkit-input-placeholder {
+    color: #fff;
+}
+.field.blueIcon div.input input[type='password']::-webkit-input-placeholder {
+    color: #fff;
+}
+.ui.fluid.left.icon.input input[type='text'] {
+    background-color: rgb(87 194 226 / 20%);
+    font-weight: bold;
+    font-size: x-large;
+    color: #fff;
+}
+.ui.fluid.left.icon.input input[type='password'] {
+    background-color: rgb(87 194 226 / 20%);
+    font-weight: bold;
+    font-size: x-large;
+    color: #fff;
+}
+
+/* BUY SCREEN CSS */
+
+/* TodayDate Buy */
+.two.wide.field.TodayDate label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.two.wide.field.TodayDate div.ui.inverted.left.icon.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+.two.wide.field.two.wide.field.TodayDate div.ui.inverted.left.icon.input i {
+    color: #00bcd4;
+}
+
+.three.wide.field.TodayDate label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.three.wide.field.TodayDate div.ui.inverted.left.icon.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+.three.wide.field.three.wide.field.TodayDate div.ui.inverted.left.icon.input i {
+    color: #00bcd4;
+}
+
+.two.wide.field.TodayDate label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.two.wide.field.TodayDate div.ui.inverted.left.icon.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+.two.wide.field.two.wide.field.TodayDate div.ui.inverted.left.icon.input i {
+    color: #00bcd4;
+}
+
+.one.wide.field.TodayDate label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.one.wide.field.TodayDate div.ui.inverted.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+.one.wide.field.one.wide.field.TodayDate div.ui.inverted.input i {
+    color: #00bcd4;
+}
+
+/* BuyAccount */
+.two.wide.field.BuyAccount label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.two.wide.field.BuyAccount div.ui.inverted.left.icon.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+.two.wide.field.BuyAccount div.ui.inverted.left.icon.input i {
+    color: #00bcd4;
+}
+
+/* BuyAreaCode */
+.one.wide.field.AreaCode label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.one.wide.field.one.wide.field.AreaCode div.ui.inverted.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+
+/* Phone Number */
+.two.wide.field.PhoneNumber label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.two.wide.field.two.wide.field.PhoneNumber div.ui.inverted.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+
+/* Name */
+.two.wide.field.Name label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.two.wide.field.two.wide.field.Name div.ui.inverted.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+
+.three.wide.field.Name label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.three.wide.field.three.wide.field.Name div.ui.inverted.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+
+.four.wide.field.Name label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.four.wide.field.four.wide.field.Name div.ui.inverted.input input {
+    color: white;
+    background-color: #d5c1c124;
+}
+
+/* NEW RECEIPT */
+.ui.yellow.large.celled.selectable.striped.compact.table {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* BUY RECEIPT TABLE  */
+.ui.green.large.celled.selectable.striped.compact.table {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* RENEW RECEIPT */
+.ui.blue.large.celled.selectable.striped.compact.table {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ACCOUNT TABLE */
+.ui.blue.large.celled.selectable.table {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ACCOUNT TABLE */
+.ui.blue.large.celled.table {
+    font-size: 24px;
+    font-weight: bold;
+}
